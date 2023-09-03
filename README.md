@@ -66,7 +66,3 @@ export { Counter }
 ```
 
 [For an example using typescript and project structure, you can look at the example here.](https://github.com/khanindev/hoc-vvm/tree/main/example)
-
-
-
-Translated with www.DeepL.com/Translator (free version)
