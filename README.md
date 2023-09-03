@@ -49,7 +49,7 @@ import { useCounterViewModel } from "./use-counter-view-model.js"
 ```
 Describe the implementation of the component, to the component in addition to all props is passed an object `vm`, which is the result of the execution of the hook of your view model.
 ```javascript
-const Counter = withVm(useCounterViewModel, ({ vm, ...someProps }) => { 
+const Counter = withVM(useCounterViewModel, ({ vm, ...someProps }) => { 
     return (
         <>
             <div>

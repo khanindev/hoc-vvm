@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {withViewModelHook} from "../src";
-import {PureComponent} from "react";
-
+import { withVM } from "../src";
 
 type CounterProps = {
     defaultValue: number;
@@ -35,7 +33,7 @@ const useCounterViewModel = ({ defaultValue }: CounterProps): CounterViewModel =
     }
 }
 
-const Counter = withViewModelHook<CounterViewModel, CounterProps>(useCounterViewModel, ({ vm, ...someProps}) => {
+const Counter = withVM<CounterViewModel, CounterProps>(useCounterViewModel, ({ vm, ...someProps}) => {
     return (
         <div>
             <div>

@@ -10,14 +10,14 @@ type ViewModelHook<ViewModel, ComponentProps> = (
   props: ComponentProps
 ) => ViewModel;
 
-export const withViewModelHook = <ViewModel, ComponentProps>(
+export const withVM = <ViewModel, ComponentProps>(
   useViewModelHook: ViewModelHook<ViewModel, ComponentProps>,
   Component: FC<WrappedProps<ViewModel, ComponentProps>>
 ) => {
   return (
     props: ComponentProps
   ): ReactElement<WrappedProps<ViewModel, ComponentProps>> => {
-    const viewModel = useViewModelHook(props);
-    return <Component vm={viewModel} {...props} />;
+    const vm = useViewModelHook(props);
+    return <Component vm={vm} {...props} />;
   };
 };
