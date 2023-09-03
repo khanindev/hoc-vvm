@@ -65,7 +65,9 @@
   },
   "repository": {
     "type": "git",
-    "name": "hoc-vvm",
     "url": "https://github.com/khanindev/hoc-vvm.git"
+  },
+  "release": {
+    "branches": ["main"]
   }
 }
