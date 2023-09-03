@@ -40,7 +40,7 @@ const useCounterViewModel = (props) => {
     }
 }
 
-    export { useCounterViewModel }
+export { useCounterViewModel }
 ```
 Import a higher-order component into the file with the component for which you want to describe the view model, as well as the hook itself, which contains the logic of your view model.
 ```javascript
