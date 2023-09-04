@@ -21,6 +21,7 @@ Write your view model, it's basically a custom react hook. It takes the props pa
 ```javascript
 const useCounterViewModel = (props) => {
     const [count, setCount] = React.useState(props.defaultValue)
+  
     const increment = () => {
         setCount(( state ) => {
             return state + 1
